@@ -98,16 +98,16 @@ table, caption {
 }
 
 #reports div.header {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 #reports div.header, #reports a.bug-row {
-  display: table-row;
-  border-bottom: 1px black dotted;
+    display: table-row;
+    border-bottom: 1px black dotted;
 }
 
 #reports div.header div {
-  text-align: left;
+    text-align: left;
 }
 
 #reports a.bug-row:hover {
