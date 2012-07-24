@@ -599,6 +599,7 @@ Require.modules["app/ui/dashboard"] = function(exports, require) {
           newTerms,
           function(response) {
             cache.set(cacheKey, response.bugs);
+            console.log(response.bugs);
             showBugs($(selector), response.bugs);
             $(selector).find("h2").removeClass("loading");
           });
