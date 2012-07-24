@@ -57,18 +57,19 @@ a:hover {
 }
 
 #reports .container {
-    /*display: table;*/
+    display: table;
 }
 
 #reports .container > div {
     display: table-cell;
+    min-width: 300px;
     padding: 10px;
+    width: 400px;
 }
 
 #reports .container h2 {
     margin-top: 0;
     padding-top: 10px;
-    width: 400px;
 }
 
 #code-reviews h2 {
@@ -110,7 +111,7 @@ table, caption {
 
 #reports div.bugs {
     display: table;
-    width: 400px;
+    width: 100%;
     border-collapse: collapse;
 }
 
