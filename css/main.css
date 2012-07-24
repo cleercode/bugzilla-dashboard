@@ -58,6 +58,7 @@ a:hover {
 
 #reports .container {
     display: table;
+    margin: -10px;
 }
 
 #reports .container > div {
