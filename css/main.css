@@ -60,18 +60,35 @@ a:hover {
     display: table;
 }
 
-#reports .container > div:first-child {
-    padding: 0;
-}
-
 #reports .container > div {
     display: table-cell;
-    padding: 0 0.5em;
+    padding: 10px;
 }
 
 #reports .container h2 {
     margin-top: 0;
+    padding-top: 10px;
     width: 20em;
+}
+
+#code-reviews h2 {
+    border-top: 5px solid #c33;
+}
+
+#assigned-bugs h2 {
+    border-top: 5px solid #639;
+}
+
+#reported-bugs h2 {
+    border-top: 5px solid #09c;
+}
+
+#cc-bugs h2 {
+    border-top: 5px solid #690;
+}
+
+#fixed-bugs h2 {
+    border-top: 5px solid #fc3;
 }
 
 #templates {
