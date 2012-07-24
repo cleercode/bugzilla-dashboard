@@ -98,12 +98,13 @@ table, caption {
 }
 
 #reports div.header {
+    background: #eee;
     font-weight: bold;
 }
 
 #reports div.header, #reports a.bug-row {
     display: table-row;
-    border-bottom: 1px black dotted;
+    border-bottom: 1px solid #ddd;
 }
 
 #reports div.header div {
