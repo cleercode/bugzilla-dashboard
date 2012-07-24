@@ -586,6 +586,8 @@ Require.modules["app/ui/dashboard"] = function(exports, require) {
     var cacheKey = key + "/" + selector;
     var cached = cache.get(cacheKey);
     if (cached) {
+      if (cached.length == 0)
+        $(selector).hide();
       showBugs($(selector), cached);
       if (!forceUpdate)
         return;
@@ -600,6 +602,8 @@ Require.modules["app/ui/dashboard"] = function(exports, require) {
           function(response) {
             cache.set(cacheKey, response.bugs);
             console.log(response.bugs);
+            if (response.bugs.length == 0)
+              $(selector).hide();
             showBugs($(selector), response.bugs);
             $(selector).find("h2").removeClass("loading");
           });
